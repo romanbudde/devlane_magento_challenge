@@ -1,0 +1,22 @@
+#####################
+# ejemplos para usar multiples cuentas con ssh
+#####################
+#improntus-github
+Host  github.com-improntus
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa_improntus
+ IdentitiesOnly yes
+
+#####################
+#doppler-github
+Host  github.com-doppler
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa_doppler
+ IdentitiesOnly yes
+
+#####################
+#aaxis-gitlab
+Host  gitlab.com-aaxis
+ HostName gitlab.com
+ IdentityFile ~/.ssh/id_rsa_aaxis
+ IdentitiesOnly yes
