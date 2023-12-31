@@ -41,6 +41,7 @@ RUN apt-get update \
     vim \
     wget \
     curl \
+    mcrypt \
     lynx \
     psmisc \
     unzip \

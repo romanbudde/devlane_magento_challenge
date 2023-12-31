@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => '1.9.4.5',
+        'version' => '1.9.4.5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '98da842ef7aa59b8b8fee642de8b0b6deec55c31',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => '1.9.4.5',
+            'version' => '1.9.4.5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '98da842ef7aa59b8b8fee642de8b0b6deec55c31',
             'dev_requirement' => false,
         ),
         'composer/ca-bundle' => array(

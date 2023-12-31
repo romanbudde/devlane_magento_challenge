@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Roman_NewCustomerPermissions>
+            <active>true</active>
+            <codePool>Roman</codePool>
+        </Roman_NewCustomerPermissions>
+    </modules>
+</config>

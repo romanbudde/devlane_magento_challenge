@@ -21,44 +21,44 @@
  *
  * @category    Mage
  * @package     Mage_Core
- * @copyright   Copyright (c) 2006-2018 Magento, Inc. (http://www.magento.com)
+ * @copyright   Copyright (c) 2006-2020 Magento, Inc. (http://www.magento.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 -->
 <config>
     <global>
         <install>
-            <date>{{date}}</date>
+            <date><![CDATA[Fri, 29 Dec 2023 16:31:23 +0000]]></date>
         </install>
         <crypt>
-            <key>{{key}}</key>
+            <key><![CDATA[715d5607ed75d335e87d724ec38ee9fc]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
             <db>
-                <table_prefix>devlane</table_prefix>
+                <table_prefix><![CDATA[]]></table_prefix>
             </db>
             <default_setup>
                 <connection>
-                    <host>db</host>
-                    <username>root</username>
-                    <password>123456</password>
-                    <dbname>db_devlane_challenge</dbname>
-                    <initStatements>{{db_init_statemants}}</initStatements>
-                    <model>{{db_model}}</model>
-                    <type>{{db_type}}</type>
-                    <pdoType>{{db_pdo_type}}</pdoType>
+                    <host><![CDATA[db]]></host>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[123456]]></password>
+                    <dbname><![CDATA[db_devlane_challenge]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
                     <active>1</active>
                 </connection>
             </default_setup>
         </resources>
-        <session_save>{{session_save}}</session_save>
+        <session_save><![CDATA[files]]></session_save>
     </global>
     <admin>
         <routers>
             <adminhtml>
                 <args>
-                    <frontName>{{admin_frontname}}</frontName>
+                    <frontName><![CDATA[admin]]></frontName>
                 </args>
             </adminhtml>
         </routers>
