@@ -2,8 +2,8 @@
 <config>
     <modules>
         <Roman_NewCustomerPermissions>
-            <active>true</active>
-            <codePool>Roman</codePool>
+            <active>false</active>
+            <codePool>local</codePool>
         </Roman_NewCustomerPermissions>
     </modules>
 </config>
