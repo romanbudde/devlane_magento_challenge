@@ -3,6 +3,7 @@
 This is my project for the take home challenge for Devlane.  
 
 The platform chosen for the task was Magento 1.9, specifically Magento 1.9.4.5, which was chosen mainly because I feel somewhat comfortable with it and understand many of its quirks (however, I'm more adept at Magento 2+ versions).  
+The environment was Dockerized since I'm used to working with Docker all the time, and personally it makes it easier for me to manage different technologies versions and the installation of packages. I started the project from a plain and empty magento 1.9.4.5, with nothing but magento's core files and the module I started building.
 
 The main idea behind the system was to build upon Magento's core functionality of Customer Groups, and make a custom module that adds an option (called "Customer Groups Permissions") to magento's /admin panel.  
 Once the option is clicked, a menu is displayed that shows an item called "Permissions settings", and then, in that same adminhtml view, displays a block which is a form that shows all of the customer groups, giving the admin the ability to disable certain categories for certain customer groups, and even disable the checkout for that customer group.  
@@ -19,4 +20,11 @@ $permissionsCollection = $permissionsModel->getCollection();
 $permissionsData = $permissionsCollection->getData();
 ```
 
+The admin panel should be at http://localhost/admin/, and the frontend simply at http://localhost/.  
+There is an admin user I created and used for developing, which is 'radmin', and the password is 'Asdasd123'.  
+Setting the environment up should just involve having docker installed, and running, on the root folder of the project, the commands:  
+docker compose build  
+docker compose up  
+  
+  
 Thank you for your time.
