@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_customerpermissions_index>
+        <reference name="content">
+            <block type="roman_customerpermissions/adminhtml_form"
+                    name="roman_customerpermissions_form" template="customerpermissions/form.phtml"/>
+        </reference>
+    </adminhtml_customerpermissions_index>
+    
+    
+    <!-- <customerpermissions_index>
+        <reference name="content">
+            <block type="roman_customerpermissions/adminhtml_form"
+                    name="roman_customerpermissions_form" template="customerpermissions/form.phtml"/>
+        </reference>
+    <customerpermissions_index>
+    <customerpermissions>
+        <reference name="content">
+            <block type="roman_customerpermissions/adminhtml_form"
+                    name="roman_customerpermissions_form" template="customerpermissions/form.phtml"/>
+        </reference>
+    <customerpermissions> -->
+</layout>

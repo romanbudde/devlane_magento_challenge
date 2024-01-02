@@ -44,18 +44,45 @@
                 <class>Roman_Customerpermissions_Helper</class>
             </roman_customerpermissions>
         </helpers>
+        <blocks>
+            <customerpermissions>
+                <class>Roman_Customerpermissions_Block</class>
+            </customerpermissions>
+        </blocks>
+         <models>
+            <customerpermissions>
+                <class>Roman_Customerpermissions_Model</class>
+                <!-- 
+                need to create our own resource, can't just
+                use core_mysql4
+                -->
+                <resourceModel>weblog_mysql4</resourceModel>
+                <weblog_mysql4>
+                    <class>Roman_Customerpermissions_Model_Mysql4</class>                
+                </weblog_mysql4>
+            </customerpermissions>    
+        </models>
     </global>
     <admin>
         <routers>
-            <customerpermissions>
-                <use>standard</use>
+            <adminhtml>
                 <args>
-                    <module>Roman_Customerpermissions</module>
-                    <frontName>customerpermissions</frontName>
+                    <modules>
+                        <Roman_Customerpermissions after="Mage_Adminhtml">Roman_Customerpermissions</Roman_Customerpermissions>
+                    </modules>
                 </args>
-            </customerpermissions>
+            </adminhtml>
         </routers>
     </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <Roman_Customerpermissions>
+                    <file>customerpermissions.xml</file>
+                </Roman_Customerpermissions>
+            </updates>
+        </layout>
+    </adminhtml>
     <!-- <admin>
         <routers>
             <adminhtml>

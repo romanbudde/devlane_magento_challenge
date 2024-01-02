@@ -39,4 +39,21 @@
             </children>
         </customerpermissions>
     </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customerpermissions>
+                        <title>Roman - Customer Permissions</title>
+                        <sort_order>1</sort_order>
+                        <children>
+                            <customerpermissionschild>
+                                <title>Permissions settings</title>
+                            </customerpermissionschild>
+                        </children>
+                    </customerpermissions>
+                </children>
+            </admin>
+        </resources>
+    </acl>
 </config>

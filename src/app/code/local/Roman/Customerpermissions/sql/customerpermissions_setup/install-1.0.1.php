@@ -19,13 +19,9 @@ $table = $installer->getConnection()
         'nullable'  => false,
         'default'   => '0',
         ), 'Customer Group ID')
-    ->addColumn('title', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
-        'nullable'  => false,
-        ), 'Title')
-    ->addColumn('description', Varien_Db_Ddl_Table::TYPE_TEXT, '64k', array(
-        ), 'Description')
-    ->addColumn('url', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
-        ), 'Url')
+    ->addColumn('permissions_data', Varien_Db_Ddl_Table::TYPE_TEXT, '64k', array(
+        'nullable' => true,
+    ), 'Permissions Data')
     ->setComment('My comment');
     
 $installer->getConnection()->createTable($table);
