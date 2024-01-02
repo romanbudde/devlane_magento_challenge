@@ -26,6 +26,19 @@ class Roman_Customerpermissions_Block_Adminhtml_Form extends Mage_Adminhtml_Bloc
                 'label' => 'Customer Group: ' . $customerGroup->getCustomerGroupCode(),
             ));
             
+            // Add separation after each customer group
+            $fieldset->addField('text_for_' . $customerGroup->getId(), 'note', array(
+                'label' => 'Select the product categories you wish to DISABLE for this customer group',
+            ));
+            
+            // $fieldset->addField('categories_note', 'note', array(
+            //     'label' => 'Select the product categories you wish to disable for this customer group',
+            // ));
+            
+            // $fieldset->addField('note_field', 'note', array(
+            //     'label' => 'This is a note field. You can add your explanatory text here.',
+            // ));
+            
             foreach ($categories as $category) {
                 $fieldset->addField('category_' . $category->getId() . '_for_' . $customerGroup->getId(), 'checkbox', array(
                     'label' => $category->getName(),

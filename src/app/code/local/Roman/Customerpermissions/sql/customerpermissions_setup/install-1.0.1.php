@@ -1,5 +1,4 @@
 <?php
-// die('my sql installer');
 $installer = $this;
 $installer->startSetup();
 
